@@ -14,7 +14,7 @@ const SignUp = () => {
                 e.target.reset()
                 setUser(result.user)
                 const newUser={email,name,photo}
-                fetch('http://localhost:5000/users',{
+                fetch('https://coffee-store-server-ten-chi.vercel.app/users',{
                     method:'POST',
                     headers:{
                         'content-type':'application/json'

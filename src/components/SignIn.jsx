@@ -9,7 +9,7 @@ const SignIn = () => {
     const pass=e.target.password.value
     loginFunc(email,pass)
       .then(result=>{
-        console.log(result.user)
+        setUser(result.user)
       })
       .catch(error=>console.log(error))
   }
